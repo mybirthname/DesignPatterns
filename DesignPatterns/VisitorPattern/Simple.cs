@@ -58,5 +58,32 @@ namespace DesignPatterns.VisitorPattern
         }
     }
 
+    public class Clerk : Employee
+    {
+        public Clerk(string name, double income, int vacationDays)
+            :base(name, income, vacationDays)
+        {
+
+        }
+    }
+
+    public class Director : Employee
+    {
+
+        public Director(string name, double income, int vacationDays)
+            : base(name, income, vacationDays)
+        {
+        }
+    }
+
+    class President : Employee
+    {
+
+        public President(string name, double income, int vacationDays)
+            : base(name, income, vacationDays)
+        {
+        }
+    }
+
 
 }
